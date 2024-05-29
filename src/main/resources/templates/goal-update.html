@@ -7,10 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-    <title>Student Update</title>
+    <title>Goal Update</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <a class="navbar-brand" href="/">
         <img src="/images/logo.jpg" alt="" width="80" height="60">
     </a>
@@ -18,7 +18,6 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <!-- Replace this li element with the one from the goal detail page -->
         <li class="nav-item">
             <a class="nav-link" href="/goals/all">Goals</a>
         </li>
@@ -28,12 +27,14 @@
     </ul>
 </nav>
 <div class="container">
-    <h1>Student Update</h1>
-    <form action="/students/update" method="post">
-        <input type="number" id="id" name="id"  data-th-value="${student.id}" readonly/>
-        <input type="text" id="name" name="name" data-th-value="${student.name}"/>
-        <input type="text" id="major" name="major" data-th-value="${student.major}"/>
-        <input type="number" id="gpa" name="gpa" step="0.01" data-th-value="${student.gpa}"/>
+    <h1>Goal Update</h1>
+    <form action="/goals/update" method="post">
+        <input type="hidden" id="goalId" name="goalId"  data-th-value="${goal.goalId}" readonly/>
+        <input type="hidden" id="userId" name="userId" data-th-value="${goal.userId}" readonly/>
+        <input type="text" id="title" name="title" data-th-value="${goal.title}"/>
+        <input type="text" id="details" name="details" data-th-value="${goal.details}"/>
+        <input type="date" id="target-date" name="target-date" data-th-value="${goal.targetDate}"/>
+        <input type="text" id="status" name="status" data-th-value="${goal.status}"/>
         <button type="submit">Save</button>
     </form>
 </div>

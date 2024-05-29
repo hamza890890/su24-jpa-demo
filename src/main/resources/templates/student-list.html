@@ -18,11 +18,12 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
+        <!-- Replace this li element with the one from the goal detail page -->
         <li class="nav-item">
-            <a class="nav-link" href="#">Second</a>
+            <a class="nav-link" href="/goals/all">Goals</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Third</a>
+            <a class="nav-link" href="/tasks/all">Tasks</a>
         </li>
     </ul>
 </nav>
@@ -33,9 +34,7 @@
         <input type="text" id="major" name="major" placeholder="Major"/>
         <input type="number" id="gpa" name="gpa" step="0.01" placeholder="GPA"/>
         <button type="submit">Create New Student</button>
-
     </form>
-
     <table class="table table-striped">
         <tr>
             <th>Id</th>
@@ -49,7 +48,6 @@
             <td data-th-text="${student.name}"></td>
             <td data-th-text="${student.major}"></td>
         </tr>
-
     </table>
 </div>
 </body>
