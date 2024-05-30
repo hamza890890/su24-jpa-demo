@@ -31,10 +31,10 @@
     <form action="/goals/update" method="post">
         <input type="hidden" id="goalId" name="goalId"  data-th-value="${goal.goalId}" readonly/>
         <input type="hidden" id="userId" name="userId" data-th-value="${goal.userId}" readonly/>
-        <input type="text" id="title" name="title" data-th-value="${goal.title}"/>
-        <input type="text" id="details" name="details" data-th-value="${goal.details}"/>
-        <input type="date" id="target-date" name="target-date" data-th-value="${goal.targetDate}"/>
-        <input type="text" id="status" name="status" data-th-value="${goal.status}"/>
+        <input type="text" id="title" name="title" data-th-value="${goal.title}" placeholder="Title"/>
+        <input type="text" id="details" name="details" data-th-value="${goal.details}" placeholder="Details"/>
+        <input type="date" id="targetDate" name="targetDate" data-th-value="${goal.targetDate}" placeholder="Target Date"/>
+        <input type="text" id="status" name="status" data-th-value="${goal.status}" placeholder="Status"/>
         <button type="submit">Save</button>
     </form>
 </div>

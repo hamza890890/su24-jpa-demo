@@ -7,10 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-    <title>Task List</title>
+    <title>Task Update</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <a class="navbar-brand" href="/">
         <img src="/images/logo.jpg" alt="" width="80" height="60">
     </a>
@@ -19,25 +19,23 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Second</a>
+            <a class="nav-link" href="/goals/all">Goals</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Third</a>
+            <a class="nav-link" href="/tasks/all">Tasks</a>
         </li>
     </ul>
 </nav>
 <div class="container">
     <h1>Task Update</h1>
     <form action="/tasks/update" method="post">
-        <input type="number" id="taskId" name="taskId"  data-th-value="${task.taskId}" readonly/>
-        <input disabled type="number" id="goalId" name="goalId"  data-th-value="${task.goal.goalId}"/>
-        <input type="text" id="title" name="title" data-th-value="${task.title}"/>
-        <input type="text" id="details" name="details" data-th-value="${task.details}"/>
-        <input type="text" id="status" name="status" data-th-value="${task.status}"/>
+        <input type="number" id="taskId" name="taskId"  data-th-value="${task.taskId}" readonly placeholder="Task ID"/>
+        <input disabled type="number" id="goalId" name="goalId"  data-th-value="${task.goal.goalId}" placeholder="Goal ID"/>
+        <input type="text" id="title" name="title" data-th-value="${task.title}" placeholder="Title"/>
+        <input type="text" id="details" name="details" data-th-value="${task.details}" placeholder="Details"/>
+        <input type="text" id="status" name="status" data-th-value="${task.status}" placeholder="Status"/>
         <button type="submit">Save</button>
     </form>
-
-
 </div>
 </body>
 </html>

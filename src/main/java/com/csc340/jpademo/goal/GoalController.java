@@ -36,6 +36,7 @@ public class GoalController {
 
     @PostMapping("/update")
     public String updateGoal(Goal goal) {
+        System.out.println(goal.getTargetDate());
         goalService.updateGoal(goal);
         return "redirect:/goals/" + goal.getGoalId();
     }
