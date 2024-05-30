@@ -118,7 +118,7 @@ This is an individual assignment. You are required to design and develop a web a
     ### Database Schema
 
     - Include a `.sql` file for the database schema, if necessary.
-    ```
+    
 
 2. **Submit the GitHub Repository Link:**
   - Copy the URL of your GitHub repository and submit it as required.
