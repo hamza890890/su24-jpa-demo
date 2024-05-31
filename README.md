@@ -1,8 +1,8 @@
 # READ ME PLEASE CRUD APP Assignment 
 ## CRUD MVC App using JPA/Hibernate, MySQL, and ThymeLeaf.
-## Instructions:
+## Instructions ((Below are the instructions but if you just want to run the program, open it in IntelliJ, and right click the top most folder and select reload from disk. After this, click main menu on the top left of intelliJ and select: run->Edit Configurations->Add New Configuration (Left side of the window)->Application->Name it->Select the deafult main class (there should be only the one)->Apply->Ok->And you should be able to run it (Even if it gives a red x, run it and click continue anyway):
 # Task Manager Application
-
+# 
 ## My Instructions for running the program (This took roughly 8 hours in total to complete. Starting the Friday of Memorial day Weekend and Continuing up until the day before it was due)
 
 ### Step 1: Fork and Clone the Repository
