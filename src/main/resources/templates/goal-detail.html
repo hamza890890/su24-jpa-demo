@@ -45,7 +45,8 @@
                     <li th:each="task : ${goal.tasks}">
                         <p class="card-title" th:text="'Task ID: ' + ${task.taskId}"></p>
                         <p>Title: <span th:text="${task.title}"></span></p>
-                        <p>GoalID: <span th:text="${task.goal.goalId}"></span></p>
+                        <p class="card-text" data-th-text=" 'Details: '+${task.details}"></p>
+                        <p class="card-text" data-th-text=" 'Status: '+${task.status}"></p>
                     </li>
                 </ul>
             </div>
